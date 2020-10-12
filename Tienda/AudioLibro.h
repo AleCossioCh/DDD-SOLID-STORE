@@ -1,7 +1,7 @@
 #pragma once
 #include"CDMusica.h"
 #include"Libro.h"
-class AudioLibro: public CDMusica, public Libro
+class AudioLibro: public Libro, public CDMusica
 {
 private:
 	string english;

@@ -12,6 +12,16 @@ void CDMusica::llenarInformacion()
 	cin >> artista;
 }
 
+string CDMusica::getArtista()
+{
+	return artista;
+}
+
+void CDMusica::setArtista(string newArtista)
+{
+	this->artista = newArtista;
+}
+
 void CDMusica::mostrar()
 {
 	cout << "CD de musica: " << endl;

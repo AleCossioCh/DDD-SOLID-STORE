@@ -3,7 +3,6 @@
 #include <string>
 
 using namespace std;
-// Open/Closed to changes
 class Articulo
 {
 protected:

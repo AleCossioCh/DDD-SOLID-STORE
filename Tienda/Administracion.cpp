@@ -85,7 +85,6 @@ void Administracion::mostrarArticulos()
 	{
 		for (int i = 0; i < numArticulos; i++)
 		{
-			//Liskov substitution principle
 			listaArticulos[i]->mostrar();
 			cout << endl;
 		}

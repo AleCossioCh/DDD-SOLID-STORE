@@ -15,8 +15,8 @@ void Libro::llenarInformacion()
 
 void Libro::mostrar()
 {
-	cout << "Libro: " << endl;
 	Articulo::mostrar();
+	cout << "Libro: " << endl;
 	cout << "Autor: " << autor << endl;
 	cout << "Editorial: " << editorial << endl;
 }

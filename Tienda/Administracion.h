@@ -11,7 +11,6 @@ private:
 	Articulo* listaArticulos[50];
 public:
 	Administracion();
-	//Single responsibility
 	void agregarArticulo();
 	void mostrarArticulos();
 	void rentarArticulo();

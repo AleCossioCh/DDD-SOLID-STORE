@@ -6,8 +6,11 @@ AudioLibro::AudioLibro(void)
 
 void AudioLibro::llenarInformacion()
 {
+	string artista;
 	Libro::llenarInformacion();
-	CDMusica::llenarInformacion();
+	cout << "Artista: ";
+	cin >> artista;
+	CDMusica::setArtista(artista);
 	cout << "Idioma ingles (si/no): ";
 	cin >> english;
 	cout << "Idioma espa;ol (si/no): ";
@@ -18,7 +21,7 @@ void AudioLibro::mostrar()
 {
 	cout << "AUDIO-LIBRO: " << endl;
 	Libro::mostrar();
-	CDMusica::mostrar();
+	cout << "Artista: " << CDMusica::getArtista() << endl;
 	cout << "Idioma espa;ol: " << spanish << endl;
 	cout << "Idioma ingles: " << english << endl;
 }

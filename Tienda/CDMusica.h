@@ -1,6 +1,6 @@
 #pragma once
 #include "Articulo.h"
-//Interface segregation principle -> new class
+
 class CDMusica : public virtual Articulo
 {
 private:
@@ -8,6 +8,8 @@ private:
 public:
 	CDMusica(void);
 	void llenarInformacion();
+	string getArtista();
+	void setArtista(string newArtista);
 	void mostrar();
 	~CDMusica(void);
 };
