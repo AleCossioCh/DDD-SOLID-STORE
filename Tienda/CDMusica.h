@@ -1,10 +1,10 @@
 #pragma once
 #include "Articulo.h"
 //Interface segregation principle -> new class
-class CDMusica : public Articulo
+class CDMusica : public virtual Articulo
 {
 private:
-	string Banda;
+	string artista;
 public:
 	CDMusica(void);
 	void llenarInformacion();

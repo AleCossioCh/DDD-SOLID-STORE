@@ -12,6 +12,7 @@ void Administracion::agregarArticulo()
 	cout << "1. Libro" << endl;
 	cout << "2. Pelicula" << endl;
 	cout << "3. CDMusical"<<endl;
+	cout << "4. Audio - libro" << endl;
 	cin >> auxiliar;
 	if (auxiliar == 1)
 	{
@@ -25,7 +26,12 @@ void Administracion::agregarArticulo()
 	}
 	if (auxiliar == 3)
 	{
-		listaArticulos[numArticulos] = new CDMusica;
+		listaArticulos[numArticulos] = new CDMusica();
+		listaArticulos[numArticulos]->llenarInformacion();
+	}
+	if (auxiliar == 4)
+	{
+		listaArticulos[numArticulos] = new AudioLibro();
 		listaArticulos[numArticulos]->llenarInformacion();
 	}
 	numArticulos++;

@@ -3,6 +3,7 @@
 #include "Pelicula.h"
 #include "CDMusica.h"
 #include "Articulo.h"
+#include "AudioLibro.h"
 class Administracion
 {
 private:

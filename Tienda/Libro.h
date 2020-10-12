@@ -1,7 +1,7 @@
 #pragma once
 #include "Articulo.h"
 //Interface segregation principle -> new class
-class Libro : public Articulo
+class Libro : public virtual Articulo
 {
 private:
 	string autor;
