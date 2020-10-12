@@ -1,0 +1,26 @@
+#pragma once
+#include <iostream>
+#include <string>
+
+using namespace std;
+// Open/Closed to changes
+class Articulo
+{
+protected:
+	string ID;
+	string nombre;
+	int cantCopias;
+	int cantDisponibles;
+	int precio;
+public:
+	Articulo(void);
+	virtual void llenarInformacion();
+	virtual void mostrar();
+	void prestar();
+	void devolver();
+	string getID();
+	~Articulo(void);
+};
+
+
+
